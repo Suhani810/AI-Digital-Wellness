@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Digital Wellness Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>AI Digital Wellness Predictor</h1>
+
+    <form action="/predict" method="POST">
+
+        <label>Age</label>
+        <input type="number"
+               name="age"
+               min="10"
+               max="100"
+               required>
+
+        <label>Gender</label>
+        <select name="gender" required>
+            <option value="">Select Gender</option>
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select>
+
+        <label>Occupation</label>
+        <select name="occupation" required>
+            <option value="">Select Occupation</option>
+            <option value="2">Student</option>
+            <option value="1">Employee</option>
+            <option value="0">Other</option>
+        </select>
+
+        <label>Daily Screen Time (Hours)</label>
+        <input type="number"
+               name="screen_time"
+               min="0"
+               max="24"
+               step="0.1"
+               required>
+
+        <label>Average Sleep Hours</label>
+        <input type="number"
+               name="sleep"
+               min="0"
+               max="24"
+               step="0.1"
+               required>
+
+        <label>Physical Activity (Days per Week)</label>
+        <input type="number"
+               name="activity"
+               min="0"
+               max="7"
+               required>
+
+        <label>Daily Notifications</label>
+        <input type="number"
+               name="notifications"
+               min="0"
+               max="1000"
+               required>
+
+        <br><br>
+
+        <button type="submit">
+            Predict Wellbeing
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
