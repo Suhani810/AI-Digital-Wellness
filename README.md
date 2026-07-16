@@ -1,5 +1,6 @@
 # AI Digital Wellness Predictor
 
+## Deployement Link: https://ai-digital-wellness.onrender.com
 ## 📌 Project Overview
 
 AI Digital Wellness Predictor is a Machine Learning-based web application that predicts a user's wellbeing based on their digital lifestyle habits. The system analyzes inputs such as age, screen time, sleep hours, physical activity, notifications, gender, and occupation to predict the user's wellbeing level and provide personalized recommendations.
